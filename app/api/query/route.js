@@ -50,6 +50,7 @@ export const POST = async (req) => {
         })
 
         await client.close();
+        
 
         return NextResponse.json({
             answer : res.text,
@@ -59,7 +60,7 @@ export const POST = async (req) => {
 
     } catch (err) {
         console.log(err);
-        return new Response('Failed to upload', {
+        return new Response('Internal Server Error', {
             status: 500
         })
     }
