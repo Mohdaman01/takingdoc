@@ -3,13 +3,9 @@ import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { MongoDBAtlasVectorSearch } from "langchain/vectorstores/mongodb_atlas";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { RetrievalQAChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { PromptTemplate } from "langchain/prompts";
 import { MongoClient } from "mongodb";
 import { writeFile } from 'fs/promises';
 import { existsSync } from "fs";
-
 
 
 const storeDocToVectorstore = async (file) => {
@@ -62,6 +58,8 @@ export const POST = async (req) => {
         const data = await req.formData();
 
         const file = data.get('file');
+
+        console.log(file);
 
         if (!file) {
             return new NextResponse.json({

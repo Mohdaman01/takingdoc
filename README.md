@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Talking Doc
+
+As the name suggest you chat with your pdf format document.
+
+Upload the file than ask question about the content of it.
+
+Get reasonable answer/response form it.
+
+### Tech Stack
+
+- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+- For user interface "client side rendering" is used and for api end points next.js as a backend sever is used.
+
+- For styling [TailWind.css](https://tailwindcss.com) is used.
+
+- For "Chat/QA model , pfd-loader, vectorstore and retrieval" [langChain](https://www.langchain.com) is used.
+
+- For "vectorstore" [MongoDB Atlas](https://www.mongodb.com/atlas/database) is used.
+
+### Reason for chosing this tech stack
+
+- Next.js is a very powerfull and stable framework which has many features for this kind of application.
+    
+- Tailwind.css is a css framework which increases the speed for development significantly by using their utility classes.
+
+- LangChain is a framework designed to simplify the creation of applications using large language models.
+LainChain also supports mongoDB as a vectorstore for the parsed content of the document.
 
 ## Getting Started
 
