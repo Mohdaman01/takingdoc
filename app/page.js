@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 export default function Home() {
   const [selectedFile, setSelectedFile] = useState(null);
+  const [isUploaded, setISUploaded] = useState(false);
   const [query, setQuery] = useState("");
   const [chat, setChat] = useState([]);
 
@@ -20,7 +21,7 @@ export default function Home() {
           method: 'POST',
           body: data,
         });
-
+        setSelectedFile(null);
         if (!res.ok) throw new Error(await res.text());
         return;
       } catch (err) {
@@ -104,11 +105,11 @@ export default function Home() {
 
           <div className="chat__dispaly w-full h-[420px] border-2 border-black mb-2 overflow-auto rounded-[10px] bg-slate-600">
 
-            {selectedFile === null ?
-              <div><p className="inline-block m-2 ml-4 p-2 bg-green-500 rounded-[10px] max-w-[450px]">Upload a document or Chat with existing one</p>
+            {isUploaded ?
+              <div><p className="inline-block m-2 ml-4 p-2 bg-green-500 rounded-[10px] max-w-[450px]">Ask me any question regarding the uploaded document.</p>
               </div>
               :
-              <div><p className="inline-block m-2 ml-4 p-2 bg-green-500 rounded-[10px] max-w-[450px]">Ask me any question regarding the uploaded document.</p></div>
+              <div><p className="inline-block m-2 ml-4 p-2 bg-green-500 rounded-[10px] max-w-[450px]">Upload a document or Chat with existing one</p></div>
             }
 
             {chat.map((chat) => {
