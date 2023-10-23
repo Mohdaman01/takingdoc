@@ -6,6 +6,12 @@ Upload the file than ask question about the content.
 
 Get reasonable answer/response form it.
 
+![talking doc 1](https://github.com/Mohdaman01/talkingdoc/assets/108982559/0241933c-8492-4a8d-b7d2-ae37f9553c0c)
+
+![talking doc 2](https://github.com/Mohdaman01/talkingdoc/assets/108982559/691d92f4-9433-477a-823b-f4bde05b437c)
+
+![talking doc 3](https://github.com/Mohdaman01/talkingdoc/assets/108982559/8b8e9dcd-8b14-4e3b-8241-89a1746ef373)
+
 ### Tech Stack
 
 - This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
