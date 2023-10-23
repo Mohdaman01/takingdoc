@@ -60,6 +60,15 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+### Features to add in future
+
+- Login/SignUp system.
+
+- Add/delete multiple documents.
+
+- Store chat history in database.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
