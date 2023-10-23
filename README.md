@@ -2,7 +2,7 @@
 
 As the name suggest you chat with your pdf format document.
 
-Upload the file than ask question about the content of it.
+Upload the file than ask question about the content.
 
 Get reasonable answer/response form it.
 
@@ -10,17 +10,17 @@ Get reasonable answer/response form it.
 
 - This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- For user interface "client side rendering" is used and for api end points next.js as a backend sever is used.
+- For user interface "client side rendering" of next.js is used and for api end points next.js as a backend sever is used.
 
-- For styling [TailWind.css](https://tailwindcss.com) is used.
+- For styling [Tailwind.css](https://tailwindcss.com) is used.
 
 - For "Chat/QA model , pfd-loader, vectorstore and retrieval" [langChain](https://www.langchain.com) is used.
 
 - For "vectorstore" [MongoDB Atlas](https://www.mongodb.com/atlas/database) is used.
 
-### Reason for chosing this tech stack
+### Reasons for choosing this tech stack
 
-- Next.js is a very powerfull and stable framework which has many features for this kind of application.
+- Next.js is a very powerfull and stable framework which has many features for this kind of application and can use node.js features on sever side.
     
 - Tailwind.css is a css framework which increases the speed for development significantly by using their utility classes.
 
@@ -29,7 +29,20 @@ LainChain also supports mongoDB as a vectorstore for the parsed content of the d
 
 ## Getting Started
 
-First, run the development server:
+- First, clone or downlaod the zip of from project repository.
+
+- Second, open the project in a code editor of your choice, than type "npm install" in the terminal.
+
+- Third, create a new .env file and make to these environment variables: 
+
+    - You can get MongoDB Atlas URI from [mongoDB](https://www.mongodb.com/atlas/database)
+    - You can get Open AI key from [Open AI](https://platform.openai.com/overview).
+
+```
+MONGODB_ATLAS_URI = "Your MongoDB Atlas URI"
+OPENAI_KEY = "Your Open AI key"
+```
+- All done now, just start the sever by typing below command in the terminal :
 
 ```bash
 npm run dev
