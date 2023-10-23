@@ -22,6 +22,7 @@ export default function Home() {
           body: data,
         });
         setSelectedFile(null);
+        setISUploaded(true);
         if (!res.ok) throw new Error(await res.text());
         return;
       } catch (err) {

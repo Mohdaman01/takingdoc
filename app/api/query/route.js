@@ -48,8 +48,6 @@ export const POST = async (req) => {
         const res = await chain.call({
             query,
         })
-
-        await client.close();
         
 
         return NextResponse.json({

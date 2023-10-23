@@ -15,7 +15,6 @@ const storeDocToVectorstore = async (file) => {
         const client = new MongoClient(process.env.MONGODB_ATLAS_URI || "");
 
         const collection = client.db("talking_doc").collection("docs");
-        console.log(collection);
 
         const loader = new PDFLoader(`uploads/${file.name}`, {
             splitPages: false,
