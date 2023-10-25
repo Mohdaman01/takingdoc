@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engineStrict": true,
+  "engines": {
+    "node": "v18.18.2"
+  },
   "dependencies": {
     "encoding": "^0.1.13",
     "langchain": "^0.0.164",
