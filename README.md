@@ -12,6 +12,8 @@ Get reasonable answer/response form it.
 
 ![talking doc 3](https://github.com/Mohdaman01/talkingdoc/assets/108982559/bb44a35b-8474-4468-b74f-2a75a3cdf45f)
 
+LIVE: https://talkingdoc.onrender.com
+
 ### Tech Stack
 
 
